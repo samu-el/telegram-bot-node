@@ -1,0 +1,23 @@
+{
+  "name": "telegram-lyrics-bot",
+  "version": "1.0.0",
+  "description": "ET lyrics bot, search lyrics in one-on-one and inline chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "lyrics",
+    "bot",
+    "search"
+  ],
+  "author": "sam",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.0.17",
+    "node-fetch": "^2.1.2",
+    "telegraf": "^3.21.0"
+  }
+}
