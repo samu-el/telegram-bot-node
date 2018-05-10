@@ -42,7 +42,7 @@ var getLyrics = (ctx) => {
         .then(res => res.json())
         .then(json => { 
             var res_url = json.items[0].link;
-            fetch(res_url)
+            fetch(res_url, { headers: {"User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0"}})
                 .then(res => res.text())
                 .then(body => {
                     var lyrics = body;
